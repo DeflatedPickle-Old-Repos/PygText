@@ -3,7 +3,9 @@ from tkinter import ttk
 
 import pyfiglet
 
-class Window (tk.Tk):
+#https://www.youtube.com/watch?v=S7BLnq0AZQA
+
+class PygText (tk.Tk):
     def __init__ (self, *args, **kwargs):
         tk.Tk.__init__ (self, *args, **kwargs)
         self.title ("PygText")
@@ -51,7 +53,7 @@ class Window (tk.Tk):
         self.bigText.configure (state = "disabled")
 
 def Main ():
-    app = Window ()
+    app = PygText ()
     app.mainloop ()
 
 if __name__ == "__main__":
