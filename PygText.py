@@ -17,7 +17,7 @@ class PygText (tk.Tk):
         self.fontVariable = tk.StringVar ()
         self.fontVariable.set ("standard")
 
-        self.figlet = pyfiglet.Figlet (font = self.fontVariable.get ())
+        #self.figlet = pyfiglet.Figlet (font = self.fontVariable.get ())
 
         ttk.Label (self, text = "Enter Text:").grid (row = 0, column = 0, sticky = "w")
         self.textBox = ttk.Entry (self, textvariable = self.textVariable)
